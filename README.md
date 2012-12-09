@@ -5,14 +5,15 @@ Coding Examples for ITI Student Lectures
 
 ITI Interfaces Projects
 
-* Main App
+* Console App
+* Domain
 	* Validatators
 	* ICallbackNotifier Implementations
-		* Email Notifier
-		* Sms	 Notifier
-* Service Layer
-	* Simple Worker => ICallbackNotifier
-* Tests
-	* Validatators
+		* EmailNotifier
+		* SmsNotifier
 * Interfaces
 	* ICallbackNotifier
+* Services
+	* SimpleWorker => ICallbackNotifier
+* Tests
+	* Validatators
