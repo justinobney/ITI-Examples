@@ -1,4 +1,4 @@
-﻿using Jobney.ITI.Domain;
+﻿using System;
 using Jobney.ITI.Interfaces;
 using Jobney.ITI.Services;
 using Ninject;
@@ -9,17 +9,22 @@ namespace Jobney.ITI.ConsoleApp
     {
         private static void Main(string[] args)
         {
-            var kernel = new StandardKernel();
-            kernel.Bind<ICallbackNotifier>().To<SmsNotifier>();
+            var config = new Config1();
+            //var config = new Config2();
+
+            var kernel = new StandardKernel(config);
 
             var notifier = kernel.Get<ICallbackNotifier>();
-
             notifier.Subject = "Some notification";
-            notifier.NotificationAddress = "2252814745";
+            notifier.NotificationAddress = "justinobney@gmail.com";
             notifier.Message = "This is message";
+
+
 
             var worker = new SimpleWorker();
             worker.DoWork(notifier);
+
+            Console.ReadLine();
         }
     }
 }

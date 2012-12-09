@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Net;
 using System.Net.Mail;
+using FluentValidation;
 using Jobney.ITI.Interfaces;
 
 namespace Jobney.ITI.Domain
 {
     public class EmailNotifier : ICallbackNotifier
     {
+
+        public EmailNotifier()
+        {
+            Console.WriteLine("EmailNotifier Constructed.");
+        }
+
         public string Subject { get; set; }
         public string Message { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 using System.Net.Mail;
 using Jobney.ITI.Interfaces;
 
@@ -6,6 +7,12 @@ namespace Jobney.ITI.Domain
 {
     public class SmsNotifier : ICallbackNotifier
     {
+
+        public SmsNotifier()
+        {
+            Console.WriteLine("SmsNotifier Constructed.");
+        }
+
         private string _notificationAddress;
         public string Subject { get; set; }
         public string Message { get; set; }

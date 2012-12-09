@@ -1,7 +1,9 @@
 ITI Interfaces Projects
 
 -- Main App
+-- Domain
 	-- Validatators
+		-- Email Validator
 	-- ICallbackNotifier Implementation
 		-- Email Notifier
 		-- Sms	 Notifier
