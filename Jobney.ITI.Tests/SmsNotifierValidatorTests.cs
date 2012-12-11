@@ -60,7 +60,7 @@ namespace Jobney.ITI.Tests
         }
 
         [TestClass]
-        public class TheNotificationAddressTests : EmailNotifierValidatorTests
+        public class TheNotificationAddressTests : SmsNotifierValidatorTests
         {
             [TestMethod]
             public void FailsByDefailt()
@@ -80,10 +80,10 @@ namespace Jobney.ITI.Tests
             }
 
             [TestMethod]
-            public void PasesWhenValidEmail()
+            public void PasesWhenValidPhone()
             {
                 //arrange
-                Target.NotificationAddress = "youremail@gmail.com";
+                Target.NotificationAddress = "2251234560";
 
                 //assert       
                 Validator.ShouldNotHaveValidationErrorFor(x => x.NotificationAddress, Target);
