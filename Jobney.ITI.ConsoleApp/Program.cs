@@ -1,11 +1,12 @@
 ﻿using System;
+using FluentValidation;
 using Jobney.ITI.Interfaces;
 using Jobney.ITI.Services;
 using Ninject;
 
 namespace Jobney.ITI.ConsoleApp
 {
-    public class Program
+    public static class Program
     {
         private static void Main()
         {
@@ -15,14 +16,26 @@ namespace Jobney.ITI.ConsoleApp
             var kernel = new StandardKernel(config);
 
             var notifier = kernel.Get<ICallbackNotifier>();
+            var validator = kernel.Get<AbstractValidator<ICallbackNotifier>>();
+
             notifier.Subject = "Some notification";
-            notifier.NotificationAddress = "youremail@gmail.com";
+            notifier.NotificationAddress = "2252814745";
             notifier.Message = "This is message";
 
+            var result = validator.Validate(notifier);
 
-
-            var worker = new SimpleWorker();
-            worker.DoWork(notifier);
+            if (result.IsValid)
+            {
+                var worker = new SimpleWorker();
+                worker.DoWork(notifier);
+            }
+            else
+            {
+                foreach (var error in result.Errors)
+                {
+                    Console.WriteLine(error.ErrorMessage);
+                }
+            }
 
             Console.ReadLine();
         }

@@ -1,8 +1,9 @@
 ﻿using FluentValidation;
+using Jobney.ITI.Interfaces;
 
 namespace Jobney.ITI.Domain.Validators
 {
-    public class SmsNotifierValidator : AbstractValidator<SmsNotifier>
+    public class SmsNotifierValidator : AbstractValidator<ICallbackNotifier>
     {
         public SmsNotifierValidator()
         {
@@ -15,7 +16,8 @@ namespace Jobney.ITI.Domain.Validators
                 .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotNull()
                 .NotEmpty()
-                .Matches("^[0-9]+$");
+                .Matches("^[0-9]+$") // Hardly enough coverage.. I know..
+                .WithMessage("Notification Address is not a valid phone number");
         }
     }
 }

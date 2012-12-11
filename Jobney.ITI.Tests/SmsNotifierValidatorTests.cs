@@ -8,14 +8,14 @@ namespace Jobney.ITI.Tests
     [TestClass]
     public class SmsNotifierValidatorTests
     {
-        protected SmsNotifier Target;
-        protected SmsNotifierValidator Validator;
+        private SmsNotifier target;
+        private SmsNotifierValidator validator;
 
         [TestInitialize]
         public void Init()
         {
-            Target = new SmsNotifier();
-            Validator = new SmsNotifierValidator();
+            target = new SmsNotifier();
+            validator = new SmsNotifierValidator();
         }
 
         [TestClass]
@@ -25,37 +25,37 @@ namespace Jobney.ITI.Tests
             public void FailsByDefailt()
             {
                 //assert       
-                Validator.ShouldHaveValidationErrorFor(x => x.Message, Target);
+                validator.ShouldHaveValidationErrorFor(x => x.Message, target);
             }
 
             [TestMethod]
             public void FailsWhenNull()
             {
                 //arrange
-                Target.NotificationAddress = null;
+                target.NotificationAddress = null;
 
                 //assert       
-                Validator.ShouldHaveValidationErrorFor(x => x.Message, Target);
+                validator.ShouldHaveValidationErrorFor(x => x.Message, target);
             }
 
             [TestMethod]
             public void FailsWhenEmptyString()
             {
                 //arrange
-                Target.NotificationAddress = null;
+                target.NotificationAddress = null;
 
                 //assert       
-                Validator.ShouldHaveValidationErrorFor(x => x.Message, Target);
+                validator.ShouldHaveValidationErrorFor(x => x.Message, target);
             }
 
             [TestMethod]
             public void PasesWhenHasMessage()
             {
                 //arrange
-                Target.Message = "Hi. I would like to contact you by email.";
+                target.Message = "Hi. I would like to contact you by email.";
 
                 //assert       
-                Validator.ShouldNotHaveValidationErrorFor(x => x.Message, Target);
+                validator.ShouldNotHaveValidationErrorFor(x => x.Message, target);
             }
         }
 
@@ -66,29 +66,28 @@ namespace Jobney.ITI.Tests
             public void FailsByDefailt()
             {
                 //assert       
-                Validator.ShouldHaveValidationErrorFor(x => x.NotificationAddress, Target);
+                validator.ShouldHaveValidationErrorFor(x => x.NotificationAddress, target);
             }
 
             [TestMethod]
             public void FailsWhenNull()
             {
                 //arrange
-                Target.NotificationAddress = null;
+                target.NotificationAddress = null;
 
                 //assert       
-                Validator.ShouldHaveValidationErrorFor(x => x.NotificationAddress, Target);
+                validator.ShouldHaveValidationErrorFor(x => x.NotificationAddress, target);
             }
 
             [TestMethod]
             public void PasesWhenValidPhone()
             {
                 //arrange
-                Target.NotificationAddress = "2251234560";
+                target.NotificationAddress = "2251234560";
 
                 //assert       
-                Validator.ShouldNotHaveValidationErrorFor(x => x.NotificationAddress, Target);
+                validator.ShouldNotHaveValidationErrorFor(x => x.NotificationAddress, target);
             }
         }
-
     }
 }
