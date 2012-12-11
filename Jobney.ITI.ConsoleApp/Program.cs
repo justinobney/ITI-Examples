@@ -16,7 +16,7 @@ namespace Jobney.ITI.ConsoleApp
 
             var notifier = kernel.Get<ICallbackNotifier>();
             notifier.Subject = "Some notification";
-            notifier.NotificationAddress = "justinobney@gmail.com";
+            notifier.NotificationAddress = "youremail@gmail.com";
             notifier.Message = "This is message";
 
 

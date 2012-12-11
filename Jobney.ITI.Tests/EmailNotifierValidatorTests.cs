@@ -83,7 +83,7 @@ namespace Jobney.ITI.Tests
             public void PasesWhenValidEmail()
             {
                 //arrange
-                Target.NotificationAddress = "justinobney@gmail.com";
+                Target.NotificationAddress = "youremail@gmail.com";
 
                 //assert       
                 Validator.ShouldNotHaveValidationErrorFor(x => x.NotificationAddress, Target);

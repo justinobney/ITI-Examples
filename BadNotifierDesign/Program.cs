@@ -60,7 +60,7 @@ namespace BadNotifierDesign
             using (var thisEmail = new MailMessage())
             {
                 thisEmail.From = new MailAddress("gsender1@gmail.com", "My Email Sender");
-                thisEmail.To.Add("justinobney@gmail.com");
+                thisEmail.To.Add("youremail@gmail.com");
                 thisEmail.Subject = "Email Message";
                 thisEmail.Body = "This is a message via email. It got the job done...";
                 thisEmail.IsBodyHtml = true;
@@ -82,7 +82,7 @@ namespace BadNotifierDesign
             using (var thisEmail = new MailMessage())
             {
                 thisEmail.From = new MailAddress("gsender1@gmail.com", "My SMS Sender");
-                thisEmail.To.Add("2252814745@txt.att.net");
+                thisEmail.To.Add("1234567890@txt.att.net");
                 thisEmail.Subject = "Via SMS";
                 thisEmail.Body = "Txting via code.";
                 thisEmail.IsBodyHtml = true;
