@@ -7,7 +7,7 @@ namespace Jobney.ITI.ConsoleApp
 {
     public class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var config = new Config1();
             //var config = new Config2();
