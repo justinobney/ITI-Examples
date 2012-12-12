@@ -10,12 +10,19 @@ namespace BadNotifierDesign
 {
     class Program
     {
+        /// <summary>
+        /// Possible types of notifications
+        /// </summary>
         public enum NotificationTypes
         {
             Sms,
             Email
         }
 
+        /// <summary>
+        /// Main Application Logic
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             NotificationTypes notification = GetNotificationType();
@@ -33,6 +40,11 @@ namespace BadNotifierDesign
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Use a random number to determine what type of notification will send.
+        /// In the real world this would be determined by an actual factor
+        /// </summary>
+        /// <returns></returns>
         private static NotificationTypes GetNotificationType()
         {
             if (new Random().Next(5)%2 == 1)
@@ -47,48 +59,34 @@ namespace BadNotifierDesign
             }
         }
 
+        /// <summary>
+        /// This sends a notification via Email
+        /// </summary>
         private static void SendEmail()
         {
-            var smtp = new SmtpClient
+            var notifier = new EmailNotifier()
                 {
-                    Host = "smtp.gmail.com",
-                    Port = 587,
-                    Credentials = new NetworkCredential("gsender1@gmail.com", "sendmail"),
-                    EnableSsl = true
+                    Message = "youremail@gmail.com",
+                    Subject = "Email Message",
+                    NotificationAddress = "This is a message via email. It got the job done..."
                 };
 
-            using (var thisEmail = new MailMessage())
-            {
-                thisEmail.From = new MailAddress("gsender1@gmail.com", "My Email Sender");
-                thisEmail.To.Add("youremail@gmail.com");
-                thisEmail.Subject = "Email Message";
-                thisEmail.Body = "This is a message via email. It got the job done...";
-                thisEmail.IsBodyHtml = true;
-
-                smtp.Send(thisEmail);
-            }
+            notifier.SendNotification();
         }
 
+        /// <summary>
+        /// This sends a notification via Text Message
+        /// </summary>
         public static void SendSms()
         {
-            var smtp = new SmtpClient
+            var notifier = new SmsNotifier()
             {
-                Host = "smtp.gmail.com",
-                Port = 587,
-                Credentials = new NetworkCredential("gsender1@gmail.com", "sendmail"),
-                EnableSsl = true
+                Message = "2251234567",
+                Subject = "Text Message",
+                NotificationAddress = "Hello via Text.."
             };
 
-            using (var thisEmail = new MailMessage())
-            {
-                thisEmail.From = new MailAddress("gsender1@gmail.com", "My SMS Sender");
-                thisEmail.To.Add("1234567890@txt.att.net");
-                thisEmail.Subject = "Via SMS";
-                thisEmail.Body = "Txting via code.";
-                thisEmail.IsBodyHtml = true;
-
-                smtp.Send(thisEmail);
-            }
+            notifier.SendNotification();
         }
     }
 }
