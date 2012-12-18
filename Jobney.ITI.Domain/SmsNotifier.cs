@@ -61,6 +61,8 @@ namespace Jobney.ITI.Domain
 
                 smtp.Send(thisEmail);
             }
+
+            Console.WriteLine("Notification Sent");
         }
     }
 }

@@ -10,8 +10,8 @@ namespace Jobney.ITI.ConsoleApp
     {
         private static void Main()
         {
-            var config = new Config1();
-            //var config = new Config2();
+            //var config = new Config1();
+            var config = new Config2();
 
             var kernel = new StandardKernel(config);
 
