@@ -10,8 +10,8 @@ namespace Jobney.ITI.ConsoleApp
     {
         private static void Main()
         {
-            //var config = new Config1();
-            var config = new Config2();
+            var config = new Config1();
+            //var config = new Config2();
 
             var kernel = new StandardKernel(config);
 
@@ -19,7 +19,7 @@ namespace Jobney.ITI.ConsoleApp
             var validator = kernel.Get<AbstractValidator<ICallbackNotifier>>();
 
             notifier.Subject = "Some notification";
-            notifier.NotificationAddress = "2252814745";
+            notifier.NotificationAddress = "justinobney@gmail.com";
             notifier.Message = "This is message";
 
             var result = validator.Validate(notifier);

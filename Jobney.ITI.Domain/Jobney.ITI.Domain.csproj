@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleNotifier.cs" />
     <Compile Include="EmailNotifier.cs" />
     <Compile Include="SmsNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -16,7 +16,8 @@ namespace BadNotifierDesign
         public enum NotificationTypes
         {
             Sms,
-            Email
+            Email,
+            Console
         }
 
         /// <summary>
@@ -25,6 +26,12 @@ namespace BadNotifierDesign
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+
+            // Do some really complex work here..
+            // when you get done.. let the user know via a notification..
+
+            // Ex:
+
             NotificationTypes notification = GetNotificationType();
 
             switch (notification)
@@ -34,6 +41,9 @@ namespace BadNotifierDesign
                     break;
                 case NotificationTypes.Email:
                     SendEmail();
+                    break;
+                case NotificationTypes.Console:
+                    SendConsole();
                     break;
             }
 
@@ -47,6 +57,8 @@ namespace BadNotifierDesign
         /// <returns></returns>
         private static NotificationTypes GetNotificationType()
         {
+            return NotificationTypes.Console;
+
             if (new Random().Next(5)%2 == 1)
             {
                 Console.WriteLine("SMS Coming your way..");
@@ -66,9 +78,9 @@ namespace BadNotifierDesign
         {
             var notifier = new EmailNotifier()
                 {
-                    Message = "youremail@gmail.com",
+                    Message = "This is a message via email. It got the job done...",
                     Subject = "Email Message",
-                    NotificationAddress = "This is a message via email. It got the job done..."
+                    NotificationAddress = "justinobney@gmail.com"
                 };
 
             notifier.SendNotification();
@@ -81,9 +93,21 @@ namespace BadNotifierDesign
         {
             var notifier = new SmsNotifier()
             {
-                Message = "2251234567",
+                Message = "Hello via Text..",
                 Subject = "Text Message",
-                NotificationAddress = "Hello via Text.."
+                NotificationAddress = "2252814745"
+            };
+
+            notifier.SendNotification();
+        }
+
+        private static void SendConsole()
+        {
+            var notifier = new ConsoleNotifier()
+            {
+                Message = "This is a message via email. It got the job done...",
+                Subject = "Email Message",
+                NotificationAddress = "justinobney@gmail.com"
             };
 
             notifier.SendNotification();
