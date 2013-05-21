@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.Observable"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.ChainOfResponsibility", "Jobney.Learning.ChainOfResponsibility\Jobney.Learning.ChainOfResponsibility.csproj", "{1E418185-348A-4530-8604-7036ABD2BA5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.ChainOfResponsibility.ConsoleApp", "Jobney.Learning.ChainOfResponsibility.ConsoleApp\Jobney.Learning.ChainOfResponsibility.ConsoleApp.csproj", "{97327B02-D42A-4C08-97AF-07EA57596561}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{1E418185-348A-4530-8604-7036ABD2BA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E418185-348A-4530-8604-7036ABD2BA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E418185-348A-4530-8604-7036ABD2BA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,5 +96,6 @@ Global
 		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7} = {2942904A-2DDF-4DEA-A68D-3741C210127A}
 		{B2BE114B-49D1-4D2F-A018-9A47061BD377} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
 		{1E418185-348A-4530-8604-7036ABD2BA5A} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
+		{97327B02-D42A-4C08-97AF-07EA57596561} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
 	EndGlobalSection
 EndGlobal
