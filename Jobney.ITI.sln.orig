@@ -32,13 +32,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.Observable", "Jobney.Learning.Observable\Jobney.Learning.Observable.csproj", "{B2BE114B-49D1-4D2F-A018-9A47061BD377}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.ChainOfResponsibility.ConsoleApp", "Jobney.Learning.ChainOfResponsibility.ConsoleApp\Jobney.Learning.ChainOfResponsibility.ConsoleApp.csproj", "{97327B02-D42A-4C08-97AF-07EA57596561}"
+EndProject
 <<<<<<< HEAD
 =======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.ChainOfResponsibility", "Jobney.Learning.ChainOfResponsibility\Jobney.Learning.ChainOfResponsibility.csproj", "{1E418185-348A-4530-8604-7036ABD2BA5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.ChainOfResponsibility.ConsoleApp", "Jobney.Learning.ChainOfResponsibility.ConsoleApp\Jobney.Learning.ChainOfResponsibility.ConsoleApp.csproj", "{97327B02-D42A-4C08-97AF-07EA57596561}"
-EndProject
->>>>>>> Added console app to show dealt hands
+>>>>>>> saving-the-world
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,17 +77,17 @@ Global
 		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.Build.0 = Release|Any CPU
 <<<<<<< HEAD
 =======
 		{1E418185-348A-4530-8604-7036ABD2BA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E418185-348A-4530-8604-7036ABD2BA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E418185-348A-4530-8604-7036ABD2BA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E418185-348A-4530-8604-7036ABD2BA5A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> Added console app to show dealt hands
+>>>>>>> saving-the-world
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,10 +101,10 @@ Global
 		{19B353D0-1428-4D08-84B9-589B2D27B613} = {0A203D74-6E3A-4FDD-BA4D-6A3AE40D4225}
 		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7} = {2942904A-2DDF-4DEA-A68D-3741C210127A}
 		{B2BE114B-49D1-4D2F-A018-9A47061BD377} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
+		{97327B02-D42A-4C08-97AF-07EA57596561} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
 <<<<<<< HEAD
 =======
 		{1E418185-348A-4530-8604-7036ABD2BA5A} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
-		{97327B02-D42A-4C08-97AF-07EA57596561} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
->>>>>>> Added console app to show dealt hands
+>>>>>>> saving-the-world
 	EndGlobalSection
 EndGlobal
