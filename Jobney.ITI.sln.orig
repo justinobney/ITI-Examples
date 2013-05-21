@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.ITI.ConsoleApp", "Jobney.ITI.ConsoleApp\Jobney.ITI.ConsoleApp.csproj", "{D03EC6B1-F98C-4B20-BC37-B5F616C29688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.ITI.Services", "Jobney.ITI.Services\Jobney.ITI.Services.csproj", "{CF802348-0C8F-4616-8B26-6E56F47926F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.ITI.Interfaces", "Jobney.ITI.Interfaces\Jobney.ITI.Interfaces.csproj", "{09EEF5C8-DD41-468C-BA82-7F7C9D1E1EE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.ITI.Domain", "Jobney.ITI.Domain\Jobney.ITI.Domain.csproj", "{94C14CDB-C8A0-4D83-BA88-AFD3667D3F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.ITI.Tests", "Jobney.ITI.Tests\Jobney.ITI.Tests.csproj", "{6954EB0F-1543-4D53-8049-3B4DCE6EF0D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectStructure", "ProjectStructure", "{1546BF04-D34F-4F3A-8251-24B08A882D61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImproperDesign", "ImproperDesign", "{0A203D74-6E3A-4FDD-BA4D-6A3AE40D4225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadNotifierDesign", "BadNotifierDesign\BadNotifierDesign.csproj", "{19B353D0-1428-4D08-84B9-589B2D27B613}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{36E310C1-178A-4AAE-8068-6F26D48A2326}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SubjectProjects", "SubjectProjects", "{2942904A-2DDF-4DEA-A68D-3741C210127A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.Observable", "Jobney.Learning.Observable\Jobney.Learning.Observable.csproj", "{B2BE114B-49D1-4D2F-A018-9A47061BD377}"
+EndProject
+<<<<<<< HEAD
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.ChainOfResponsibility", "Jobney.Learning.ChainOfResponsibility\Jobney.Learning.ChainOfResponsibility.csproj", "{1E418185-348A-4530-8604-7036ABD2BA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.ChainOfResponsibility.ConsoleApp", "Jobney.Learning.ChainOfResponsibility.ConsoleApp\Jobney.Learning.ChainOfResponsibility.ConsoleApp.csproj", "{97327B02-D42A-4C08-97AF-07EA57596561}"
+EndProject
+>>>>>>> Added console app to show dealt hands
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D03EC6B1-F98C-4B20-BC37-B5F616C29688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03EC6B1-F98C-4B20-BC37-B5F616C29688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03EC6B1-F98C-4B20-BC37-B5F616C29688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03EC6B1-F98C-4B20-BC37-B5F616C29688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF802348-0C8F-4616-8B26-6E56F47926F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF802348-0C8F-4616-8B26-6E56F47926F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF802348-0C8F-4616-8B26-6E56F47926F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF802348-0C8F-4616-8B26-6E56F47926F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EEF5C8-DD41-468C-BA82-7F7C9D1E1EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EEF5C8-DD41-468C-BA82-7F7C9D1E1EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EEF5C8-DD41-468C-BA82-7F7C9D1E1EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EEF5C8-DD41-468C-BA82-7F7C9D1E1EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C14CDB-C8A0-4D83-BA88-AFD3667D3F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C14CDB-C8A0-4D83-BA88-AFD3667D3F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C14CDB-C8A0-4D83-BA88-AFD3667D3F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C14CDB-C8A0-4D83-BA88-AFD3667D3F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6954EB0F-1543-4D53-8049-3B4DCE6EF0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6954EB0F-1543-4D53-8049-3B4DCE6EF0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6954EB0F-1543-4D53-8049-3B4DCE6EF0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6954EB0F-1543-4D53-8049-3B4DCE6EF0D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B353D0-1428-4D08-84B9-589B2D27B613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B353D0-1428-4D08-84B9-589B2D27B613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B353D0-1428-4D08-84B9-589B2D27B613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B353D0-1428-4D08-84B9-589B2D27B613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+		{1E418185-348A-4530-8604-7036ABD2BA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E418185-348A-4530-8604-7036ABD2BA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E418185-348A-4530-8604-7036ABD2BA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E418185-348A-4530-8604-7036ABD2BA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97327B02-D42A-4C08-97AF-07EA57596561}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Added console app to show dealt hands
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF802348-0C8F-4616-8B26-6E56F47926F4} = {1546BF04-D34F-4F3A-8251-24B08A882D61}
+		{09EEF5C8-DD41-468C-BA82-7F7C9D1E1EE0} = {1546BF04-D34F-4F3A-8251-24B08A882D61}
+		{94C14CDB-C8A0-4D83-BA88-AFD3667D3F2C} = {1546BF04-D34F-4F3A-8251-24B08A882D61}
+		{6954EB0F-1543-4D53-8049-3B4DCE6EF0D7} = {1546BF04-D34F-4F3A-8251-24B08A882D61}
+		{D03EC6B1-F98C-4B20-BC37-B5F616C29688} = {1546BF04-D34F-4F3A-8251-24B08A882D61}
+		{19B353D0-1428-4D08-84B9-589B2D27B613} = {0A203D74-6E3A-4FDD-BA4D-6A3AE40D4225}
+		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7} = {2942904A-2DDF-4DEA-A68D-3741C210127A}
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
+<<<<<<< HEAD
+=======
+		{1E418185-348A-4530-8604-7036ABD2BA5A} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
+		{97327B02-D42A-4C08-97AF-07EA57596561} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
+>>>>>>> Added console app to show dealt hands
+	EndGlobalSection
+EndGlobal
