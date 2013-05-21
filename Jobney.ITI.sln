@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SubjectProjects", "SubjectP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobney.Learning.Observable", "Jobney.Learning.Observable\Jobney.Learning.Observable.csproj", "{B2BE114B-49D1-4D2F-A018-9A47061BD377}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,10 @@ Global
 		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +82,6 @@ Global
 		{D03EC6B1-F98C-4B20-BC37-B5F616C29688} = {1546BF04-D34F-4F3A-8251-24B08A882D61}
 		{19B353D0-1428-4D08-84B9-589B2D27B613} = {0A203D74-6E3A-4FDD-BA4D-6A3AE40D4225}
 		{C03AF6CB-93BF-4A35-A246-6A72A89D59C7} = {2942904A-2DDF-4DEA-A68D-3741C210127A}
+		{B2BE114B-49D1-4D2F-A018-9A47061BD377} = {F9C65F7F-BF3B-44F0-A089-B1CA56D90A2D}
 	EndGlobalSection
 EndGlobal
