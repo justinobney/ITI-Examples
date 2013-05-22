@@ -47,12 +47,16 @@
     <Compile Include="Enums\CardValue.cs" />
     <Compile Include="HandRankers\IHandRanker.cs" />
     <Compile Include="HandRankers\PairRanker.cs" />
+    <Compile Include="HandRankers\StraightRanker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\CardTest.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="Tests\DeckTest.cs" />
     <Compile Include="HandRankers\HighCardRanker.cs" />
     <Compile Include="Tests\PairHandlerTest.cs" />
+    <Compile Include="HandRankers\ThreeOfAKindRanker.cs" />
+    <Compile Include="Tests\StraightRankerTest.cs" />
+    <Compile Include="Tests\ThreeOfAKindRankerTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
