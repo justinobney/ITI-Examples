@@ -45,6 +45,10 @@
     <Compile Include="ExtensionMethods\EnumerableExtensions.cs" />
     <Compile Include="Enums\CardSuit.cs" />
     <Compile Include="Enums\CardValue.cs" />
+    <Compile Include="HandRankers\FlushRanker.cs" />
+    <Compile Include="HandRankers\FourOfAKindRanker.cs" />
+    <Compile Include="HandRankers\FullHouseRanker.cs" />
+    <Compile Include="Tests\FlushRankerTest.cs" />
     <Compile Include="HandRankers\IHandRanker.cs" />
     <Compile Include="HandRankers\PairRanker.cs" />
     <Compile Include="HandRankers\StraightRanker.cs" />
@@ -53,6 +57,8 @@
     <Compile Include="Deck.cs" />
     <Compile Include="Tests\DeckTest.cs" />
     <Compile Include="HandRankers\HighCardRanker.cs" />
+    <Compile Include="Tests\FourOfAKindRankerTest.cs" />
+    <Compile Include="Tests\FullHouseRankerTest.cs" />
     <Compile Include="Tests\PairHandlerTest.cs" />
     <Compile Include="HandRankers\ThreeOfAKindRanker.cs" />
     <Compile Include="Tests\StraightRankerTest.cs" />
