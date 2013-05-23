@@ -29,7 +29,7 @@ namespace Jobney.Learning.ChainOfResponsibility
                 }
             }
 
-            Cards = Cards.Shuffle(new Random());
+            Cards = Cards.Shuffle();
         }
 
         public IEnumerable<Card> Deal(int numOfCards)
