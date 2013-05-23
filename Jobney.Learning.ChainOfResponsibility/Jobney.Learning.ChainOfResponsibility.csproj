@@ -48,8 +48,10 @@
     <Compile Include="HandRankers\FlushRanker.cs" />
     <Compile Include="HandRankers\FourOfAKindRanker.cs" />
     <Compile Include="HandRankers\FullHouseRanker.cs" />
+    <Compile Include="HandRankers\PokerGameRanker.cs" />
     <Compile Include="HandRankers\RoyalFlushRanker.cs" />
     <Compile Include="HandRankers\StraightFlushRanker.cs" />
+    <Compile Include="Tests\GameRankerTests\PokerGameRankerTests.cs" />
     <Compile Include="Tests\HandRankerTests\FlushRankerTest.cs" />
     <Compile Include="HandRankers\IHandRanker.cs" />
     <Compile Include="HandRankers\PairRanker.cs" />
