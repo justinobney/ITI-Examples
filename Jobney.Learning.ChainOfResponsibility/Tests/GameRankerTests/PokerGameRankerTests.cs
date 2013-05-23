@@ -168,6 +168,27 @@ namespace Jobney.Learning.ChainOfResponsibility.Tests.GameRankerTests
             }
 
             [TestMethod]
+            public void ReturnsTwoPairWhenGivenATwoPair()
+            {
+                // Arrange
+                const HandRanking expected = HandRanking.TwoPair;
+                hand = new List<Card>()
+                    {
+                        new Card(){Suit = CardSuit.Spades, Value = CardValue.Nine},
+                        new Card(){Suit = CardSuit.Spades, Value = CardValue.Seven},
+                        new Card(){Suit = CardSuit.Clubs, Value = CardValue.Nine},
+                        new Card(){Suit = CardSuit.Hearts, Value = CardValue.Jack},
+                        new Card(){Suit = CardSuit.Diamonds, Value = CardValue.Seven}
+                    };
+
+                // Act
+                var actual = target.Rank(hand);
+
+                // Assert
+                Assert.AreEqual(expected, actual);
+            }
+            
+            [TestMethod]
             public void ReturnsPairWhenGivenAPair()
             {
                 // Arrange
@@ -176,7 +197,7 @@ namespace Jobney.Learning.ChainOfResponsibility.Tests.GameRankerTests
                     {
                         new Card(){Suit = CardSuit.Spades, Value = CardValue.Nine},
                         new Card(){Suit = CardSuit.Spades, Value = CardValue.Seven},
-                        new Card(){Suit = CardSuit.Clubs, Value = CardValue.Nine},
+                        new Card(){Suit = CardSuit.Clubs, Value = CardValue.Four},
                         new Card(){Suit = CardSuit.Hearts, Value = CardValue.Jack},
                         new Card(){Suit = CardSuit.Diamonds, Value = CardValue.Seven}
                     };

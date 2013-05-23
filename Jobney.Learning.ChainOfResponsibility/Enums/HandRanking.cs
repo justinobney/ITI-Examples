@@ -9,6 +9,7 @@
         Flush,
         Straight,
         ThreeOfAKind,
+        TwoPair,
         Pair,
         HighCard
     }
