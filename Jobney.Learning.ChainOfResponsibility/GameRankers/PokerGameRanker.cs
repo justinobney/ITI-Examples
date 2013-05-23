@@ -7,6 +7,7 @@ namespace Jobney.Learning.ChainOfResponsibility.HandRankers
     {
         private readonly HighCardRanker highCardRanker;
         private readonly PairRanker pairRanker;
+        private readonly TwoPairRanker twoPairRanker;
         readonly ThreeOfAKindRanker threeOfAKindRanker;
         private readonly StraightRanker straightRanker;
         private readonly FlushRanker flushRanker;
@@ -19,7 +20,8 @@ namespace Jobney.Learning.ChainOfResponsibility.HandRankers
         {
             highCardRanker = new HighCardRanker();
             pairRanker = new PairRanker(highCardRanker);
-            threeOfAKindRanker = new ThreeOfAKindRanker(pairRanker);
+            twoPairRanker = new TwoPairRanker(pairRanker);
+            threeOfAKindRanker = new ThreeOfAKindRanker(twoPairRanker);
             straightRanker = new StraightRanker(threeOfAKindRanker);
             flushRanker = new FlushRanker(straightRanker);
             fullHouseRanker = new FullHouseRanker(flushRanker);
