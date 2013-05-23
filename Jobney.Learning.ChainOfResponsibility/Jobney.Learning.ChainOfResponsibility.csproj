@@ -48,6 +48,7 @@
     <Compile Include="HandRankers\FlushRanker.cs" />
     <Compile Include="HandRankers\FourOfAKindRanker.cs" />
     <Compile Include="HandRankers\FullHouseRanker.cs" />
+    <Compile Include="HandRankers\StraightFlushRanker.cs" />
     <Compile Include="Tests\FlushRankerTest.cs" />
     <Compile Include="HandRankers\IHandRanker.cs" />
     <Compile Include="HandRankers\PairRanker.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Tests\FullHouseRankerTest.cs" />
     <Compile Include="Tests\PairHandlerTest.cs" />
     <Compile Include="HandRankers\ThreeOfAKindRanker.cs" />
+    <Compile Include="Tests\StraightFlushRankerTest.cs" />
     <Compile Include="Tests\StraightRankerTest.cs" />
     <Compile Include="Tests\ThreeOfAKindRankerTest.cs" />
   </ItemGroup>
