@@ -50,7 +50,7 @@
     <Compile Include="HandRankers\FullHouseRanker.cs" />
     <Compile Include="HandRankers\RoyalFlushRanker.cs" />
     <Compile Include="HandRankers\StraightFlushRanker.cs" />
-    <Compile Include="Tests\FlushRankerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\FlushRankerTest.cs" />
     <Compile Include="HandRankers\IHandRanker.cs" />
     <Compile Include="HandRankers\PairRanker.cs" />
     <Compile Include="HandRankers\StraightRanker.cs" />
@@ -59,14 +59,14 @@
     <Compile Include="Deck.cs" />
     <Compile Include="Tests\DeckTest.cs" />
     <Compile Include="HandRankers\HighCardRanker.cs" />
-    <Compile Include="Tests\FourOfAKindRankerTest.cs" />
-    <Compile Include="Tests\FullHouseRankerTest.cs" />
-    <Compile Include="Tests\PairHandlerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\FourOfAKindRankerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\FullHouseRankerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\PairHandlerTest.cs" />
     <Compile Include="HandRankers\ThreeOfAKindRanker.cs" />
-    <Compile Include="Tests\RoyalFlushRankerTest.cs" />
-    <Compile Include="Tests\StraightFlushRankerTest.cs" />
-    <Compile Include="Tests\StraightRankerTest.cs" />
-    <Compile Include="Tests\ThreeOfAKindRankerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\RoyalFlushRankerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\StraightFlushRankerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\StraightRankerTest.cs" />
+    <Compile Include="Tests\HandRankerTests\ThreeOfAKindRankerTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
